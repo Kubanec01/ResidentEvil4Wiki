@@ -1,0 +1,29 @@
+
+.differentText span {
+    font-weight: 700;
+    font-size: 1.3rem; 
+}
+
+.differentImage {
+    max-width: 90%;
+    width: 470px;
+    object-fit: cover; 
+    height: auto; 
+    border-radius: 2px;
+    z-index: 200;
+}
+
+.bossFightImage {
+    max-width: 40%;
+    width: 520px;
+    object-fit: cover; 
+    height: auto; 
+    border-radius: 2px;
+}
+
+@media screen and (width < 1024px) {
+    .differentText span {
+        font-weight: 700;
+        font-size: 1.8rem; 
+    }
+}

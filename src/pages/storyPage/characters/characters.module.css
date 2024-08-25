@@ -1,0 +1,8 @@
+.charText span {
+  color: #b169f9;
+}
+
+.charText span:nth-last-child(-n + 2) {
+  color: #f446b1;
+}
+

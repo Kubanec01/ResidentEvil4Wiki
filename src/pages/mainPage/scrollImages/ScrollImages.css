@@ -1,0 +1,33 @@
+.all-char-content {
+  display: flex;
+  flex-direction: row;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  align-items: center;
+  position: relative;
+}
+
+.all-char-content img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: transform 0.8s linear, opacity 0.4s linear;
+}
+
+img.active-slide {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+img.left-slide {
+  transform: translateX(-100%);
+}
+
+img.right-slide {
+  transform: translateX(100%);
+}
+

@@ -1,0 +1,43 @@
+/* MIDLE */
+.ul li {
+  font-size: 25px;
+  margin-bottom: 20px;
+  transition: all 0.2s ease;
+  margin-right: 1rem;
+}
+
+.ul li:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+/* RIGHT */
+.right li {
+  font-size: 20px;
+  margin-bottom: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+.right li:hover {
+    color: white;
+}
+
+
+.button {
+    padding: 12px 50px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+    font-size: 22px;
+    color: white;
+    background: linear-gradient(to left, rgb(255, 255, 255) 50%, #f54646 50%) left;
+    background-size: 201%;
+    transition: all .4s ease, color .1s ease;
+    transform: translateX(0);
+}
+
+.button:hover{
+    color: black;
+    background-position: right;
+    transform: translateX(-3%)
+}

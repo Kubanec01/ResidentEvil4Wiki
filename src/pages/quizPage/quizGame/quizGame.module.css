@@ -1,0 +1,28 @@
+.buttonOne {
+    background: linear-gradient(to right, #ec2e94 50%, rgb(97, 53, 160) 50%) left;
+    background-size: 200%;
+    transition: all .4s ease;
+    transform: translateX(0);
+    color: black;
+  }
+  
+  .buttonOne:hover{
+      background-position: right;
+      transform: translateX(-3%);
+      color: whitesmoke;
+  }
+
+  .buttonTwo {
+    background: linear-gradient(to left, transparent 50%, rgba(232, 231, 231, 0.964) 50%) right;
+    background-size: 200%;
+    border: 2px solid rgba(255, 255, 255, 0.82);
+    transition: all .4s ease;
+    color: #ffffffd7;
+    transform: translateX(0);
+  }
+  
+  .buttonTwo:hover{
+      background-position: left;
+      transform: translateX(3%);
+      color: black;
+  }

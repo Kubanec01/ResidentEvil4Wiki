@@ -1,0 +1,29 @@
+
+
+.barUp {
+    border-radius: 2px 10px 4px 10px;
+    background: linear-gradient(to left, #ec2e94 50%, rgb(97, 53, 160) 50%) right;
+    background-size: 200%;
+    transition: all .5s ease;
+    transform: translateY(5%);
+  }
+  
+  .barUp:hover{
+      color: whitesmoke;
+      background-position: left;
+      transform: translateY(0);
+  }
+
+  .barDown {
+    border-radius: 2px 10px 4px 10px;
+    background: linear-gradient(to left, #ec2e94 50%, rgb(97, 53, 160) 50%) right;
+    background-size: 200%;
+    transition: all .5s ease;
+    transform: translateY(0);
+  }
+  
+  .barDown:hover{
+      color: whitesmoke;
+      background-position: left;
+      transform: translateY(10%);
+  }

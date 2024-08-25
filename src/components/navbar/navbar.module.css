@@ -1,0 +1,17 @@
+.navbar {
+    background: rgba(23, 23, 23, 0.911);
+}
+
+.active {
+    background: transparent;
+}
+
+.menu {
+    transform: translateY(-100%);
+    transition: all .3s ease-in-out;
+}
+
+.activeMenu {
+    transform: translateY(0);
+    transition: all .3s ease-in-out;
+}
