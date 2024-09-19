@@ -1,6 +1,6 @@
 import style from "./characters.module.css";
-import charBgImage from "../../../assets/char-bg-img.jpg";
-import { CharactersImgs } from "../CharactersImgs";
+import charBgImage from "../../../../assets/char-bg-img.jpg";
+import { CharactersImgs } from "../../components/CharactersImgs";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 

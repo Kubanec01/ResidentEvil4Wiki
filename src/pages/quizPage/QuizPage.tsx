@@ -1,7 +1,7 @@
 import { Footer } from "../../components/footer/Footer";
 import image5 from "../../assets/image5.jpg"
-import { QuizGame } from "./quizGame/QuizGame";
-import { ContactBars } from "./contactBars/ContactBars";
+import { QuizGame } from "./components/quizGame/QuizGame";
+import { ContactBars } from "./components/contactBars/ContactBars";
 
 
 

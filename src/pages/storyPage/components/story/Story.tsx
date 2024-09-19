@@ -1,10 +1,10 @@
 import style from "./story.module.css";
-import image1 from "../../../assets/ashley-and-cennedy-img.jpg";
-import image2 from "../../../assets/final-boss-img.jpg";
-import image3 from "../../../assets/grand-escape.jpg";
-import image4 from "../../../assets/adas-call-img.jpg";
-import bgGrayImg from "../../../assets/umbrela-gray-img.png";
-import logo from "../../../assets/logo-gray.png";
+import image1 from "../../../../assets/ashley-and-cennedy-img.jpg";
+import image2 from "../../../../assets/final-boss-img.jpg";
+import image3 from "../../../../assets/grand-escape.jpg";
+import image4 from "../../../../assets/adas-call-img.jpg";
+import bgGrayImg from "../../../../assets/umbrela-gray-img.png";
+import logo from "../../../../assets/logo-gray.png";
 
 export function Story() {
   const storySections =

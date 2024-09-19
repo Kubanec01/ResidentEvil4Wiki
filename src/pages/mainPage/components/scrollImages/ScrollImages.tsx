@@ -1,24 +1,11 @@
-import { useState, useEffect } from "react";
 import "./ScrollImages.css";
-import data from "../../../data/imagesData";
+import data from "../../../../data/imagesData";
+import { useInterval } from "../../../../hooks/useInterval";
+
 
 export function ScrollImages() {
-  const [index, setIndex] = useState(0);
 
-  useEffect(() => {
-    if (index < 0) {
-      setIndex(data.length - 1);
-    } else if (index > data.length - 1) {
-      setIndex(0);
-    }
-  }, [index]);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex(index + 1);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [index]);
+  const index = useInterval()
 
   return (
     <section className="all-char w-[21.875rem] sm:w-[28.75rem] lg:w-[31.875rem]">

@@ -91,8 +91,8 @@ i18n
     },
 
     detection: {
-      order: ["navigator"], // Skúma jazyk prehliadača
-      caches: ["localStorage"], // Uloží jazyk do localStorage
+      order: ["navigator"],
+      caches: ["localStorage"],
     },
   });
 

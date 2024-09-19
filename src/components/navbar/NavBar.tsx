@@ -1,43 +1,22 @@
 import { Button, Nav, Navbar } from "react-bootstrap";
-import { useWindowWidth } from "../hooks/useWindowWidth";
-import { useEffect, useState } from "react";
+import { useWindowWidth } from "../../hooks/useWindowWidth";
+import { useState } from "react";
 import style from "./navbar.module.css";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import { HiBars3BottomRight } from "react-icons/hi2";
 import { RxCross2 } from "react-icons/rx";
+import { useScrollStatus } from "../../hooks/useScrollStatus";
+
 
 export function NavBar() {
   const windowWidth = useWindowWidth();
 
   const navBarText = "text-light hover:text-danger";
 
-  const [isOnTop, setIsOnTop] = useState<boolean>(true);
-  const [openMenu, setOpenMenu] = useState<boolean>(false);
+  const isOnTop = useScrollStatus()
 
-  useEffect(() => {
-    const navbarBackground = () => {
-      if (window.scrollY === 0) {
-        setIsOnTop(true);
-      } else {
-        setIsOnTop(false);
-      }
-    };
-
-    window.addEventListener("scroll", navbarBackground);
-
-    return () => {
-      window.removeEventListener("scroll", navbarBackground);
-    };
-  }, []);
-
-  const menuHandler = () => {
-    if (openMenu) {
-      setOpenMenu(false);
-    } else if (!openMenu) {
-      setOpenMenu(true);
-    }
-  };
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
     <>
@@ -67,7 +46,7 @@ export function NavBar() {
           ) : (
             <>
               <Button
-                onClick={menuHandler}
+                onClick={() => setIsOpen((isOpen) => !isOpen)}
                 className="mr-6 text-4xl rounded-full"
                 variant="danger"
               >
@@ -75,7 +54,7 @@ export function NavBar() {
               </Button>
               <div
                 className={`${
-                  openMenu ? style.activeMenu : style.menu
+                  isOpen ? style.activeMenu : style.menu
                 } absolute w-full top-0 left-0 flex justify-end bg-[#13131c] h-24`}
               >
                 <div className=" flex items-center justify-end w-full text-2xl">
@@ -94,7 +73,7 @@ export function NavBar() {
                     Quiz
                   </Nav.Link>
                   <Button
-                    onClick={menuHandler}
+                    onClick={() => setIsOpen((isOpen) => !isOpen)}
                     className="mr-6 text-4xl bg-transparent border-none"
                     variant="danger"
                   >

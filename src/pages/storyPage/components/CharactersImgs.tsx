@@ -1,13 +1,13 @@
-import leonImg from "../../assets/leon-char.jpg";
-import osmundImg from "../../assets/osmund-char.jpg";
-import adaImg from "../../assets/ada-char.webp";
-import ashleyImg from "../../assets/ashley-char.jpg";
-import luisImg from "../../assets/luis-char.webp";
-import hunkImg from "../../assets/hunk-char.jpg";
-import salazarImg from "../../assets/salazar-char.webp";
-import krauserImg from "../../assets/krauser-char.webp";
-import bitoresImg from "../../assets/bitores-char.jpg";
-import { CharType } from "../../Types";
+import leonImg from "../../../assets/leon-char.jpg";
+import osmundImg from "../../../assets/osmund-char.jpg";
+import adaImg from "../../../assets/ada-char.webp";
+import ashleyImg from "../../../assets/ashley-char.jpg";
+import luisImg from "../../../assets/luis-char.webp";
+import hunkImg from "../../../assets/hunk-char.jpg";
+import salazarImg from "../../../assets/salazar-char.webp";
+import krauserImg from "../../../assets/krauser-char.webp";
+import bitoresImg from "../../../assets/bitores-char.jpg";
+import { CharType } from "../../../Types";
 import { CharacterCart } from "./characterCart/CharacterCart";
 
 const characters: Array<CharType> = [

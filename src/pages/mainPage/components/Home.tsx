@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
-import image2 from "../../assets/image2.webp";
-import image3 from "../../assets/image3.avif";
-import image4 from "../../assets/image4.jpg";
+import image2 from "../../../assets/image2.webp";
+import image3 from "../../../assets/image3.avif";
+import image4 from "../../../assets/image4.jpg";
 import { motion } from "framer-motion";
 
 export function Home() {

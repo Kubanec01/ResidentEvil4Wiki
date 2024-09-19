@@ -1,11 +1,11 @@
-import { ScrollToTop } from "./components/ScrollToTop";
+import { UseScrollToTop } from "./hooks/UseScrollToTop";
 import { NavBar } from "./components/navbar/NavBar";
 import { MainRoutes } from "./routes/MainRoutes";
 
 function App() {
   return (
     <>
-      <ScrollToTop />
+      <UseScrollToTop />
       <NavBar />
       <MainRoutes />
     </>

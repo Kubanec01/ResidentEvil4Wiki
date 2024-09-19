@@ -1,5 +1,5 @@
 import style from "./contactBars.module.css";
-import { useWindowWidth } from "../../../components/hooks/useWindowWidth";
+import { useWindowWidth } from "../../../../hooks/useWindowWidth";
 import { useTranslation } from "react-i18next";
 
 export function ContactBars() {
@@ -18,14 +18,10 @@ export function ContactBars() {
   const pSmStyle = `text-center relative text-2xl my-12 before:content-[''] before:bg-[#00000046] 
     before:w-full before:h-1 before:absolute before:-top-6 before:left-0 after:content[''] 
     after:bg-[#00000046] after:w-1/3 after:h-1 after:absolute after:-bottom-6 after:right-1/3`;
-  ("");
 
   const windowWidth = useWindowWidth();
 
-  function handleClick(l: string) {
-    const link = l;
-    window.open(`${link}`, "_blank");
-  }
+  const openLink = (link: string) => window.open(link, '_blank')
 
   return (
     <div className="bg-[#111112ef] w-full lg:h-[45.625rem] xl:h-[43.75rem] flex justify-center overflow-hidden">
@@ -33,7 +29,7 @@ export function ContactBars() {
         <>
           <div className=" w-[80%] max-w-[68.75rem] flex gap-3 justify-between">
             <div
-              onClick={() => handleClick("https://github.com/Kubanec01")}
+              onClick={() => openLink("https://github.com/Kubanec01")}
               style={{
                 borderRadius: "20px 20px 0 0",
               }}
@@ -50,7 +46,7 @@ export function ContactBars() {
             </div>
             <div
               onClick={() =>
-                handleClick("https://www.facebook.com/jakub.roman.351")
+                openLink("https://www.facebook.com/jakub.roman.351")
               }
               style={{
                 borderRadius: "20px 20px 0 0",
@@ -67,7 +63,7 @@ export function ContactBars() {
               </div>
             </div>
             <div
-              onClick={() => handleClick("mailto:jakub.z.roman@gmail.com")}
+              onClick={() => openLink("mailto:jakub.z.roman@gmail.com")}
               style={{
                 borderRadius: "20px 20px 0 0",
               }}
@@ -87,7 +83,7 @@ export function ContactBars() {
         <>
           <div className=" w-[90%] flex flex-col h-full">
             <div
-              onClick={() => handleClick("github")}
+              onClick={() => openLink("github")}
               className={containerSmStyle}
             >
               <div className={barBodySmStyle}>
@@ -101,7 +97,7 @@ export function ContactBars() {
               </div>
             </div>
             <div
-              onClick={() => handleClick("facebook")}
+              onClick={() => openLink("facebook")}
               className={containerSmStyle}
             >
               <div className={barBodySmStyle}>
@@ -114,7 +110,7 @@ export function ContactBars() {
               </div>
             </div>
             <div
-              onClick={() => handleClick("mail")}
+              onClick={() => openLink("mail")}
               className={containerSmStyle}
             >
               <div className={barBodySmStyle}>

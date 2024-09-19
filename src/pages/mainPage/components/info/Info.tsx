@@ -1,10 +1,10 @@
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import style from "./info.module.css";
 import { Review } from "../reviewAndQuiz/ReviewAndQuiz";
-import infoImg from "../../../assets/info-img.jpg";
-import { ScrollImages } from "../scrollImages/ScrollImages";
+import infoImg from "../../../../assets/info-img.jpg";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { ScrollImages } from "../scrollImages/ScrollImages";
 
 export function Info() {
   const { t } = useTranslation();

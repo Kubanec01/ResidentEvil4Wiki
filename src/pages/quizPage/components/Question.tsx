@@ -4,7 +4,7 @@ const inputStyle = "w-5 aspect-square accent-[#f446b1] cursor-pointer";
 const labelStyle = "text-xl";
 const fieldsetStyle = `text-[#fffffff7] flex flex-col gap-4 my-3 mx-2`;
 const questionsH2Style = `relative text-[#ffffffef] font-medium text-2xl sm:text-[1.6rem] lg:text-2xl uppercase mt-3 mb-8 mx-2 after:content-[''] after:absolute after:w-[30%] after:h-0.5 after:-bottom-4 after:left-0 after:bg-[#ffffffc6]`;
-import { QuestionProps } from "../../Types";
+import { QuestionProps } from "../../../Types";
 
 export function Question(props: QuestionProps) {
   return (

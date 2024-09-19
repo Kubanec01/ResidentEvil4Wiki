@@ -1,10 +1,10 @@
 import style from "./review.module.css";
-import Reviews from "../../../assets/reviews.title.img.png";
-import quote from "../../../assets/quotes.png";
-import quote2 from "../../../assets/quotes2.png";
-import platformsImg from "../../../assets/platforms-img.jpg";
-import ReviewImg from "../../../assets/rewiev-img.avif";
-import quizImg from "../../../assets/Quiz-img.png";
+import Reviews from "../../../../assets/reviews.title.img.png";
+import quote from "../../../../assets/quotes.png";
+import quote2 from "../../../../assets/quotes2.png";
+import platformsImg from "../../../../assets/platforms-img.jpg";
+import ReviewImg from "../../../../assets/rewiev-img.avif";
+import quizImg from "../../../../assets/Quiz-img.png";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 

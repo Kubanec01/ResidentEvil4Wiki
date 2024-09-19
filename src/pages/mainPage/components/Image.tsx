@@ -1,5 +1,5 @@
-import image1 from "../../assets/image1.jpg";
-import logo from "../../assets/logo.png";
+import image1 from "../../../assets/image1.jpg";
+import logo from "../../../assets/logo.png";
 import { motion } from "framer-motion";
 
 export function Image() {

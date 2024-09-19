@@ -130,8 +130,6 @@ export function QuizGame() {
     Partial<Record<(typeof questions)[number]["id"], string>>
   >({});
 
-  console.log(values);
-
   const handleSubmit = (event: FormEvent) => {
     event.preventDefault();
 

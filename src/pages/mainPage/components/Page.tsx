@@ -1,6 +1,6 @@
 import { Home } from "./Home";
 import { Info } from "./info/Info";
-import image5 from "../../assets/image5.jpg"
+import image5 from "../../../assets/image5.jpg"
 import { Platforms } from "./Platforms";
 
 export function Page() {

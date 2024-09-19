@@ -1,7 +1,7 @@
 import { Footer } from "../../components/footer/Footer";
 import image5 from "../../assets/image5.jpg";
-import { Characters } from "./characters/Characters";
-import { Story } from "./story/Story";
+import { Characters } from "./components/characters/Characters";
+import { Story } from "./components/story/Story";
 
 export function StoryCharactersPage() {
   return (
