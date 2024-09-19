@@ -1,24 +1,18 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { useEventListener } from "./useEventListener";
 
 export function useScrollStatus() {
   const [isOnTop, setIsOnTop] = useState<boolean>(true);
 
-  useEffect(() => {
-    const scrollPosition = () => {
-      if (window.scrollY === 0) {
-        setIsOnTop(true);
-      } else {
-        setIsOnTop(false);
-      }
-    };
-
-    window.addEventListener('scroll', scrollPosition);
-
-    return () => {
-        window.removeEventListener('scroll', scrollPosition);
+  const scrollPosition = () => {
+    if (window.scrollY === 0) {
+      setIsOnTop(true);
+    } else {
+      setIsOnTop(false);
     }
+  };
 
-  });
+  useEventListener(window, "scroll", scrollPosition);
 
-  return isOnTop
+  return isOnTop;
 }
