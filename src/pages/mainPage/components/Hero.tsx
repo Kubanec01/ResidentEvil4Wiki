@@ -2,7 +2,7 @@ import image1 from "../../../assets/image1.jpg";
 import logo from "../../../assets/logo.png";
 import { motion } from "framer-motion";
 
-export function Image() {
+export function Hero() {
   return (
     <div>
       <div className="relative">
@@ -10,7 +10,7 @@ export function Image() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.5 }}
-          className="h-[62.5rem] xl:h-[68.75rem] w-full object-cover"
+          className="h-[1000px] xl:h-[68.75rem] w-full object-cover"
           src={image1}
           alt="image1"
         />

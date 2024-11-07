@@ -8,15 +8,15 @@ import quizImg from "../../../../assets/Quiz-img.png";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-export function Review() {
+export function ReviewAndQuiz() {
   const { t } = useTranslation();
 
   // STYLES
   const reviewsLiStyle =
-    "text-xl sm:text-2xl lg:text-xl text-gray-300 z-50 font-medium";
-  const buttonStyle = "text-gray-200 text-xl px-4 py-2 font-medium";
+    "sm:text-2xl md:mb-1 mb-2 lg:text-xl text-lg text-gray-300 z-50 md:font-medium";
+  const buttonStyle = "text-gray-200 md:text-xl text-lg md:px-4 px-3 md:py-2 py-2 md:font-medium";
   const quizLiStyle =
-    "flex items-center gap-2 text-white lg:text-sm font-medium";
+    "flex items-center gap-2 text-white text-sm font-medium";
   const quizUlStyle = `my-8 flex relative flex-col gap-2 before:content-[''] before:w-[24%] before:h-[.16rem] before:bg-[#ffffff91]
             before:absolute before:-top-4 before:left-1
              after:content-[''] after:w-[80%] after:h-[.1rem] after:absolute after:-bottom-4 after:right-2 after:bg-[#ffffff91]`;
@@ -32,15 +32,15 @@ export function Review() {
             backgroundPosition: "center",
             borderRadius: "0 0 0 6px",
           }}
-          className="lg:w-[50%] h-[31.25rem] lg:h-[36.25rem] flex flex-nowrap justify-center"
+          className="lg:w-[50%] lg:h-[580px] h-[490px] flex flex-nowrap justify-center"
         >
           <div className="relative block h-full w-[85%]">
             <img
-              className="w-[28.125rem] mb-7 mt-2"
+              className="md:w-[28.125rem] w-[14.125rem] mb-7 mt-2"
               src={Reviews}
               alt="Reviews-img"
             />
-            <ul className="flex flex-col gap-1 items-end">
+            <ul className="text-right">
               <li className={reviewsLiStyle}>{t("Reviews.1")}</li>
               <li className={reviewsLiStyle}>{t("Reviews.2")}</li>
               <li className={reviewsLiStyle}>{t("Reviews.3")}</li>
@@ -64,12 +64,12 @@ export function Review() {
               </button>
             </div>
             <img
-              className="absolute w-[4.2rem] z-10 opacity-30 sm:opacity-80 top-[7.813rem] sm:top-[9.375rem] right-[11.25rem] sm:right-[11.125rem]"
+              className="absolute w-[4.2rem] z-10 opacity-30 sm:opacity-80 md:top-[9.375rem] top-[5.2rem] md:right-[11.125rem] right-[9.25rem]"
               src={quote}
               alt="quote-img"
             />
             <img
-              className="absolute w-[4.2rem] opacity-30 sm:opacity-80 bottom-[4.375rem] sm:bottom-[1.875rem] lg:bottom-[9.375rem] right-[0] sm:right-[-1.25rem]"
+              className="absolute w-[4.2rem] opacity-30 sm:opacity-80 md:bottom-[1.875rem] bottom-[3.5rem] lg:bottom-[9.375rem] right-[0] sm:right-[-1.25rem]"
               src={quote2}
               alt="quote2-img"
             />
@@ -83,15 +83,15 @@ export function Review() {
             backgroundPosition: "center",
             borderRadius: "0 0 6px 0",
           }}
-          className="lg:w-[50%] h-[35rem] md:h-[31.25rem] lg:h-[36.25rem] flex flex-nowrap justify-center"
+          className="lg:w-[50%] md:h-[500px] h-[480px] lg:h-[36.25rem] flex flex-nowrap justify-center"
         >
           <div className="block h-full w-[85%]">
             <img
-              className="w-[18.75rem] lg:mb-3 opacity-95"
+              className="md:w-[300px] w-[50%] md:mt-0 mt-2 md:-ml-0 -ml-1 lg:mb-3 opacity-95"
               src={quizImg}
               alt="quiz-img"
             />
-            <h2 className="text-white text-2xl w-[98%] mb-4 font-medium">
+            <h2 className="text-white md:text-2xl text-lg w-[98%] md:mb-4 mb-5 md:font-medium">
               {t('Quiz.quizTitle')}
             </h2>
             <ul className={quizUlStyle}>

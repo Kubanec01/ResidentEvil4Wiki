@@ -9,31 +9,31 @@ import { Link } from "react-router-dom";
 
 export function Footer() {
   const contactUl =
-    "text-[1.2rem] sm:text-lg underline mb-1 transition duration-300 ease-in-out hover:text-white";
+    "md:text-[1.2rem] sm:text-lg underline mb-1 transition duration-300 ease-in-out hover:text-white";
 
   return (
     <>
       <footer
         id="footer"
-        className="bg-[#000000ef] h-full lg:h-[21.875rem] xl:h-[18.75rem] p-12 overflow-hidden"
+        className="bg-[#000000ef] xl:h-[300px] lg:h-[350px] p-12 overflow-hidden"
       >
-        <div className="text-[#ffffffac] w-full h-full flex p-4 justify-center items-center">
-          <div className="lg:flex justify-between w-[75rem] max-w-[81.25rem] h-full">
+        <div className="text-[#ffffffac] w-full h-full flex md:p-4 justify-center items-center">
+          <div className="lg:flex justify-between max-w-[1300px] h-full">
             {/* LEFT */}
-            <div className="p-2 w-full lg:w-[33.33%]">
-              <h2 className="text-3xl md:text-lg mb-2">About page:</h2>
-              <p className="text-xl md:text-md mb-4 sm:mb-0 pr-12">
+            <div className="md:p-2 lg:w-[33.33%]">
+              <h2 className="md:text-lg text-2xl mb-2">About page:</h2>
+              <p className="text-md mb-4 sm:mb-0 md:pr-12">
                 This site only works on a project basis. <br />
                 You can find information about the characters, an explanation of
                 the story or test your knowledge in a short quiz. <br />
                 Enjoy.
               </p>
             </div>
-            {/* MIDLE */}
-            <div className=" block w-full lg:w-[33.33%] p-2">
+            {/* MIDDLE */}
+            <div className="w-full lg:w-[33.33%] md:p-2">
               {/* CONTACT PHONE AND MAIL */}
               <div>
-                <ul>
+                <ul className="md:mb-0 mb-8">
                   <li className={contactUl}>
                     <a href="mailto:jakub.z.roman@gmail.com">
                       jakub.z.roman@gmail.com
@@ -47,7 +47,7 @@ export function Footer() {
               {/* CONTACT ICONS */}
               <div className="relative mt-4 sm:mt-10 mb-6 lg:mb-0 lg:after:opacity-0 after:content-[''] after:w-[100%] sm:after:w-[60%] after:h-[2px] after:bg-[#ffffff5c] after:absolute after:-left-1 after:rounded-md">
                 <ul
-                  className={`${style.ul} flex flex-row justify-start sm:pr-16 flex-wrap`}
+                  className={`${style.ul} flex flex-row md:justify-start justify-center sm:pr-16 flex-wrap`}
                 >
                   <li>
                     <a href="https://github.com/Kubanec01" target="blank">
@@ -89,7 +89,7 @@ export function Footer() {
               </div>
             </div>
             {/* RIGHT */}
-            <div className={`${style.right} lg:w-[33.33%] p-2`}>
+            <div className={`${style.right} lg:w-[33.33%] md:p-2`}>
               <ul>
                 <li>
                   <Link to="/story">Read Story</Link>

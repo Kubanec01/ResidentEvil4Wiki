@@ -8,7 +8,7 @@ export function ScrollImages() {
   const index = useInterval()
 
   return (
-    <section className="all-char w-[21.875rem] sm:w-[28.75rem] lg:w-[31.875rem]">
+    <section className="all-char lg:w-[31.875rem] sm:w-[28.75rem] w-[17.875rem]">
       <div className="all-char-content">
         {data.map((ch, currIndex) => {
           let mainClass = "right-slide";

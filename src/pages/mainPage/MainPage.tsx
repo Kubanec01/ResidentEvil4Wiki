@@ -1,14 +1,12 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Image } from "./components/Image";
+import { Hero } from "./components/Hero";
 import { Page } from "./components/Page";
-import { Footer } from "../../components/footer/Footer";
 
 export function MainPage() {
   return (
     <>
-      <Image />
+      <Hero />
       <Page />
-      <Footer />
     </>
   );
 }

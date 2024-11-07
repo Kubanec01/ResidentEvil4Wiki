@@ -1,4 +1,4 @@
-/* MIDLE */
+/* MIDDLE */
 .ul li {
   font-size: 25px;
   margin-bottom: 20px;
@@ -40,4 +40,19 @@
     color: black;
     background-position: right;
     transform: translateX(-3%)
+}
+
+@media screen and (width < 768px) {
+  .ul li {
+    font-size: 22px;
+  }
+
+  .right li {
+    font-size: 18px;
+  }
+
+  .button {
+    padding: 8px 40px;
+    font-size: 18px;
+}
 }

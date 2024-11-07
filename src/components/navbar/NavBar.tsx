@@ -27,7 +27,7 @@ export function NavBar() {
       >
         <Navbar.Brand>
           <Link to="/">
-            <img className="h-14 ml-4 md:ml-10" src={logo} alt="logo" />
+            <img className="h-14 object-contain md:ml-10 ml-2 md:w-full w-[80%]" src={logo} alt="logo" />
           </Link>
         </Navbar.Brand>
         <Nav className="gap-4 text-xl w-auto">
@@ -47,7 +47,7 @@ export function NavBar() {
             <>
               <Button
                 onClick={() => setIsOpen((isOpen) => !isOpen)}
-                className="mr-6 text-4xl rounded-full"
+                className="md:mr-6 mr-3 text-3xl rounded-full"
                 variant="danger"
               >
                 <HiBars3BottomRight />

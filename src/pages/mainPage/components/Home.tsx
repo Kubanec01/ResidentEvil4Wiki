@@ -15,11 +15,10 @@ export function Home() {
 
   // STYLES
   const imageContainer = "lg:flex w-full lg:w-[90%] mx-auto";
-  const imageTextContainer = "w-[80%] p-10 lg:w-1/2 mx-auto text-slate-200";
-  const imageText = "text-6xl sm:text-7xl font-bold uppercase shadow-md";
-  const imageDescription = "mt-6 text-2xl lg:text-xl shadow-md";
-  const image =
-    " mx-auto w-[415px] md:w-[600px] h-[500px] object-cover rounded-sm";
+  const imageTextContainer = "w-[80%] md:my-0 my-4 md:p-10 lg:w-1/2 mx-auto text-slate-200";
+  const imageText = "md:text-7xl text-5xl font-bold uppercase shadow-md lg:-ml-0 -ml-3";
+  const imageDescription = "md:mt-6 mt-2 text-xl shadow-md lg:-ml-0 -ml-3";
+  const image ="mx-auto w-[415px] md:w-[600px] w-[88%] md:h-[500px] h-[300px] object-cover rounded-sm";
 
   return (
     <>
@@ -111,7 +110,7 @@ export function Home() {
                 hidden: { opacity: 0, x: 100 },
                 visible: { opacity: 1, x: 0 },
               }}
-              className="text-7xl font-bold uppercase shadow-md"
+              className="md:text-7xl text-5xl font-bold uppercase shadow-md lg:-ml-0 -ml-3"
             >
               fight for your
               <br />
