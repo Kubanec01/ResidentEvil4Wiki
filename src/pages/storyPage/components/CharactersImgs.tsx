@@ -52,7 +52,7 @@ const characters: Array<CharType> = [
 export function CharactersImgs() {
   return (
     <>
-      <section className="w-full flex flex-row flex-wrap gap-20 items-center justify-center xl:justify-start mx-auto p-6 pl-0">
+      <section className="w-full flex flex-row flex-wrap md:gap-20 gap-10 items-center xl:justify-start justify-center mx-auto md:p-6 pl-0">
         {characters.map((item: CharType, index) => (
           <CharacterCart
             key={`${item.name}-${index}`}

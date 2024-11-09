@@ -7,22 +7,23 @@ import bgGrayImg from "../../../../assets/umbrela-gray-img.png";
 import logo from "../../../../assets/logo-gray.png";
 
 export function Story() {
+  // STYLES
   const storySections =
     "w-full max-w-[75rem] mx-auto px-4 text-[#ffffffe2] flex flex-col lg:flex-row";
-  // LEFT STORY
+  // LEFT STORY TEXT STYLES
   const leftTitle =
-    "text-5xl font-medium shadow-md sm:w-[90%] lg:w-full py-11 pr-11 lg:pl-24 text-[#983ef1]";
+    "md:text-5xl text-4xl font-medium shadow-md lg:w-full sm:w-[90%] md:py-11 py-3 pr-11 lg:pl-24 text-[#983ef1]";
   const leftDescription =
-    "sm:w-[80%] lg:w-full text-3xl lg:text-2xl py-11 pr-11 lg:pl-24 pt-1 leading-tight lg:leading-snug";
+    "lg:w-full md:w-[90%] md:text-3xl text-lg lg:text-2xl py-11 md:pr-11 pr-4 lg:pl-24 pt-1 leading-tight lg:leading-snug";
   const leftImage =
     "w-[43.75rem] lg:w-[29.375rem] object-cover h-[25rem] lg:h-auto rounded-[2px] z-50";
 
-  // RIGHT STORY
-  const rightTitle = "text-5xl font-medium pl-0 p-11 pr-32 text-[#ff009d]";
+  // RIGHT STORY TEXT STYLES
+  const rightTitle ="md:text-5xl text-4xl font-medium lg:p-11 pl-0 lg:mt-0 mt-12 pr-32 text-[#ff009d]";
   const rightDescription =
-    "sm:w-[80%] lg:w-full text-3xl lg:text-2xl pl-0 p-11 lg:pr-24 pt-1 leading-tight lg:leading-snug";
+    "sm:w-[80%] lg:w-full md:text-3xl text-lg lg:text-2xl pl-0 lg:p-11 lg:pr-24 pr-4 xl:pt-1 pt-3 leading-tight lg:leading-snug";
   const rightImage =
-    "w-[43.75rem] lg:w-[470px] object-cover h-[25rem] lg:h-auto rounded-[2px] z-50";
+    "w-[43.75rem] lg:w-[470px] object-cover h-[25rem] md:mt-0 mt-4 lg:h-auto rounded-[2px] z-50";
 
   return (
     <>
@@ -30,27 +31,27 @@ export function Story() {
         <img
           className="absolute opacity-10 -right-60 top-52 lg:right-10 lg:top-20"
           src={bgGrayImg}
-          alt="umbrela-img"
+          alt="umbrella-img"
         />
         {/* STORY EXPLAINED */}
-        <section className="pt-[18.75rem] mx-auto mb-20">
-          <div className="w-full max-w-[75rem] mx-auto px-4 text-[#ffffffe2]">
-            <h1 className="text-5xl sm:text-6xl font-bold uppercase max-w-[85%] sm:max-w-[90%]">
+        <section className="md:pt-[18.75rem] pt-[10.75rem] mx-auto mb-20">
+          <div className="w-full max-w-[75rem] mx-auto md:px-4 px-3 text-[#ffffffe2]">
+            <h1 className="lg:text-6xl md:text-4xl text-3xl  font-bold uppercase md:max-w-[85%]">
               Have you played the game and are you in the labyrinth of the
               story? Don't worry, we've all been there. <br />
               <span className="text-[#9939f8]">STORY EXPLAINED</span>
             </h1>
-            <h2 className="text-4xl font-medium uppercase max-w-[90%] my-20 xl:my-12">
+            <h2 className="lg:text-4xl md:text-3xl text-xl font-medium uppercase max-w-[90%] xl:my-12 md:my-20 my-3">
               "An excellent game must also have an excellent story, so let's
               take a closer look at it." <br />
               <span className="text-[#ee4eb1]">Warning: Spoilers</span>
             </h2>
             <p
-              className={`text-2xl lg:text-lg font-normal uppercase max-w-[90%] sm:max-w-[80%] my-12 leading-normal sm:leading-tight`}
+              className="lg:text-lg md:text-2xl text-sm font-normal uppercase md:max-w-[80%] max-w-[96%]  my-12 leading-normal sm:leading-tight"
             >
               It's safe to say that Leon Kennedy has one of the worst Spanish
               vacations known to man in{" "}
-              <span className="text-2xl sm:text-[1.2rem] font-bold">
+              <span className="md:text-2xl text-sm md:font-bold font-semibold">
                 Resident Evil 4: Remake
               </span>
               . Though he is going there to rescue the President of The United
@@ -62,7 +63,7 @@ export function Story() {
               those are the broad strokes, it's worth breaking down the ending
               as there's some interesting stuff getting set up that can be
               missed if you're not paying attention.{" "}
-              <span className="text-2xl sm:text-[1.2rem] font-bold">
+              <span className="md:text-2xl text-sm md:font-bold font-semibold">
                 For those left wanting more of an explanation as those credits
                 rolled, here's the ending to Resident Evil Four Remake,
                 explained.
@@ -73,7 +74,7 @@ export function Story() {
           </div>
         </section>
         {/* STORY DIFFERENT */}
-        <section className="lg:py-[6.25rem]  m-auto">
+        <section className="lg:py-[6.25rem] mx-auto">
           <div className={storySections}>
             <img
               className={leftImage}
@@ -86,7 +87,7 @@ export function Story() {
               </h1>
               <p className={leftDescription}>
                 The ending of Resident Evil 4: Remake is slightly{" "}
-                <span className="font-bold lg:text-[1.3rem]">
+                <span className="md:font-bold font-semibold lg:text-[1.3rem]">
                   different from the original.
                 </span>{" "}
                 There's not too major of a change; Leon still confronts Saddler
@@ -94,7 +95,7 @@ export function Story() {
                 helping hand once the massive mutant boss fight is ready to wrap
                 up. <br />
                 However, this time around there are{" "}
-                <span className="font-bold lg:text-[1.3rem]">
+                <span className="md:font-bold font-semibold lg:text-[1.3rem]">
                   two phases to the fight
                 </span>{" "}
                 and there's a lot more dialogue getting thrown back and forth
@@ -106,7 +107,7 @@ export function Story() {
           </div>
         </section>
         {/* BOSS FIGHT */}
-        <section className="lg:py-[6.25rem]  m-auto">
+        <section className="lg:py-[6.25rem] m-auto">
           <div className={storySections}>
             <article>
               <h1 className={rightTitle}>
@@ -129,7 +130,7 @@ export function Story() {
                 put Mr Kennedy down for good. Turning into his classic{" "}
                 <span>multi-limbed nightmare creature form</span> from the old
                 games as he chases Leon around, using
-                <span>flying Plagas drones</span> to harass Leon if he gets too
+                <span> flying Plagas drones</span> to harass Leon if he gets too
                 far away. <br />
                 After that form is sufficiently worn down, Saddler then mutates
                 further into an amorphous blob with the twisted remains of his

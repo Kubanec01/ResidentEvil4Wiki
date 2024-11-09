@@ -47,7 +47,7 @@ export function NavBar() {
             <>
               <Button
                 onClick={() => setIsOpen((isOpen) => !isOpen)}
-                className="md:mr-6 mr-3 text-3xl rounded-full"
+                className="md:mr-6 mr-3 md:text-3xl text-2xl rounded-full"
                 variant="danger"
               >
                 <HiBars3BottomRight />
