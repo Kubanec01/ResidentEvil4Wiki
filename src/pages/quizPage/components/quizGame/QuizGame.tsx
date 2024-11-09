@@ -3,9 +3,9 @@ import { Question } from "../Question";
 import style from "./quizGame.module.css";
 
 // STYLES
-const spanStyle = "text-[#f446b1]";
+const spanStyle ="text-[#f446b1]";
 const resultTitle =
-  "text-white text-[2rem] lg:text-[2.6rem] uppercase pr-10 mb-6 lg:mb-0";
+  "text-white lg:text-[2.6rem] md:text-[2rem] text-[1.4rem] text-center uppercase lg:pr-10  lg:mb-0 mb-6";
 const quizButton =
   "text-2xl lg:text-3xl w-[6rem] lg:w-[7rem] h-[3.3rem] lg:h-[3.6rem] rounded-sm";
 
@@ -180,7 +180,7 @@ export function QuizGame() {
         <div className="w-[80%] max-w-[93.75rem] mx-auto flex justify-center">
           {/* h1 container */}
           <div className=" w-full mt-16 mb-28 flex justify-center">
-            <h1 className="text-[#ffffffef] text-[2.6rem] lg:text-5xl xl:text-6xl font-bold lg:w-[80%] md:leading-[4rem] uppercase text-center">
+            <h1 className="text-[#ffffffef] lg:text-5xl md:text-4xl text-[1.6rem] lg:text-center text-left font-bold lg:w-[80%] lg:leading-[4rem] uppercase">
               welcome to a <span className={spanStyle}>little quiz game</span>!{" "}
               <br />
               test your knowledge and memory in a{" "}
@@ -191,7 +191,7 @@ export function QuizGame() {
           </div>
         </div>
         <form
-          className="xl:w-[80%] max-w-[93.75rem] mx-auto flex flex-col xl:flex-row flex-wrap p-8 gap-2  items-center justify-center bg-[#00000040]"
+          className="xl:w-[80%] max-w-[93.75rem] mx-auto flex flex-col xl:flex-row flex-wrap p-8 gap-2 items-center justify-center bg-[#00000040]"
           onSubmit={handleSubmit}
         >
           {questions.map((question) => {

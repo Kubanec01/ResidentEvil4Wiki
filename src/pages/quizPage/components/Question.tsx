@@ -1,4 +1,4 @@
-const container = "w-[80%] xl:w-[48%]";
+const container = "xl:w-[48%] md:w-[80%] ";
 const liStyle = "flex items-center gap-2";
 const inputStyle = "w-5 aspect-square accent-[#f446b1] cursor-pointer";
 const labelStyle = "text-xl";
