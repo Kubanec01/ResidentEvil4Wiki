@@ -5,6 +5,7 @@ import { StoryCharactersPage } from "../pages/storyPage/StoryCharactersPage";
 
 export function MainRoutes () {
     return (
+      <>
         <Routes>
         {/* MAIN PAGE */}
         <Route path="/" element={<MainPage />} />
@@ -12,5 +13,6 @@ export function MainRoutes () {
         <Route path="quiz" element={<QuizPage />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
+      </>
     )
 }
