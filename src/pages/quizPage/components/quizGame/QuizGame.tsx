@@ -7,7 +7,7 @@ const spanStyle ="text-[#f446b1]";
 const resultTitle =
   "text-white lg:text-[2.6rem] md:text-[2rem] text-[1.4rem] text-center uppercase lg:pr-10  lg:mb-0 mb-6";
 const quizButton =
-  "text-2xl lg:text-3xl w-[6rem] lg:w-[7rem] h-[3.3rem] lg:h-[3.6rem] rounded-sm";
+  "lg:text-3xl md:text-2xl text-xl w-[6rem] lg:w-[7rem] h-[3.3rem] lg:h-[3.6rem] rounded-sm";
 
 const questions = [
   {
@@ -208,9 +208,9 @@ export function QuizGame() {
               />
             );
           })}
-          <div className="w-[90%] sm:w-[84%] xl:w-full p-4 lg:flex justify-between">
+          <div className="sm:w-[84%] w-[94%] xl:w-full p-4 lg:flex justify-between">
             <div className="w-full">{result}</div>
-            <div className="flex gap-14">
+            <div className="flex md:gap-14 gap-12">
               <button
                 onClick={handleRestart}
                 style={{

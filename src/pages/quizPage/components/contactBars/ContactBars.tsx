@@ -13,15 +13,15 @@ export function ContactBars() {
 
   // SMALLER SCREEN STYLES
   const containerSmStyle = `h-full bg-[#ec2e94] cursor-pointer rounded-2xl mb-12 transition duration-400 hover:bg-[#6135A0] hover:text-[#fffffff5]`;
-  const barBodySmStyle = "m-10 flex justify-center items-center flex-col";
-  const hSmStyle = "text-4xl text-center font-medium uppercase";
-  const pSmStyle = `text-center relative text-2xl my-12 before:content-[''] before:bg-[#00000046] 
+  const barBodySmStyle = "m-10";
+  const hSmStyle = "text-3xl text-left font-medium uppercase";
+  const pSmStyle = `text-left relative text-xl my-12 before:content-[''] before:bg-[#00000046] 
     before:w-full before:h-1 before:absolute before:-top-6 before:left-0 after:content[''] 
     after:bg-[#00000046] after:w-1/3 after:h-1 after:absolute after:-bottom-6 after:right-1/3`;
 
   const windowWidth = useWindowWidth();
 
-  const openLink = (link: string) => window.open(link, '_blank')
+  const openLink = (link: string) => window.open(link, "_blank");
 
   return (
     <div className="bg-[#111112ef] w-full lg:h-[45.625rem] xl:h-[43.75rem] flex justify-center overflow-hidden">
@@ -81,9 +81,9 @@ export function ContactBars() {
         </>
       ) : (
         <>
-          <div className=" w-[90%] flex flex-col h-full">
+          <div className=" w-[80%] flex flex-col h-full">
             <div
-              onClick={() => openLink("github")}
+              onClick={() => openLink("https://github.com/Kubanec01")}
               className={containerSmStyle}
             >
               <div className={barBodySmStyle}>
@@ -97,7 +97,9 @@ export function ContactBars() {
               </div>
             </div>
             <div
-              onClick={() => openLink("facebook")}
+              onClick={() =>
+                openLink("https://www.facebook.com/jakub.roman.351")
+              }
               className={containerSmStyle}
             >
               <div className={barBodySmStyle}>
@@ -110,7 +112,7 @@ export function ContactBars() {
               </div>
             </div>
             <div
-              onClick={() => openLink("mail")}
+              onClick={() => openLink("mailto:jakub.z.roman@gmail.com")}
               className={containerSmStyle}
             >
               <div className={barBodySmStyle}>

@@ -13,8 +13,8 @@ export function ReviewAndQuiz() {
 
   // STYLES
   const reviewsLiStyle =
-    "sm:text-2xl md:mb-1 mb-2 lg:text-xl text-lg text-gray-300 z-50 md:font-medium";
-  const buttonStyle = "text-gray-200 md:text-xl text-lg md:px-4 px-3 md:py-2 py-2 md:font-medium";
+    "sm:text-2xl md:mb-1 mb-2 lg:text-xl text-lg text-gray-300 lg:font-medium";
+  const buttonStyle = "text-gray-200 lg:text-xl text-lg md:px-4 px-3 md:py-2 py-1  md:font-medium";
   const quizLiStyle =
     "flex items-center gap-2 text-white text-sm font-medium";
   const quizUlStyle = `my-8 flex relative flex-col gap-2 before:content-[''] before:w-[24%] before:h-[.16rem] before:bg-[#ffffff91]

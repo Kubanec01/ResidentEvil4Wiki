@@ -8,7 +8,7 @@ type Props = {
 export function CharacterCart({ name, image }: Props) {
   return (
     <>
-      <li className="relative mx-5 inline-block h-[18.75rem] w-[18.75rem]">
+      <li className="relative md:mx-5 mx-4 inline-block h-[18.75rem] md:w-[18.75rem]">
         <div
           className={`${styles.imgText} p-5 absolute flex h-full w-full flex-col items-center justify-center bg-[#d63ab2c8] text-center text-white text-2xl`}
         >

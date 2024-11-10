@@ -10,23 +10,23 @@ export function Platforms() {
     <>
       <div className="h-full bg-[#111112e4] overflow-hidden">
         <div className="mt-14 sm:mt-32 mb-40 sm:mb-60 py-3 flex justify-center bg-[#00000067]">
-          <ul className="flex flex-wrap items-center justify-center px-10 md:gap-28 gap-10 md:text-5xl text-4xl text-gray-300">
-            <li className="text-7xl">
+          <ul className="flex flex-wrap items-center justify-center px-10 xl:gap-28 md:gap-16 gap-6 md:text-5xl text-2xl text-gray-300">
+            <li className="md:text-7xl text-6xl w-auto">
               <SiPlaystation4 />
             </li>
-            <li className="text-7xl">
+            <li className="md:text-7xl text-6xl w-auto">
               <SiPlaystation5 />
             </li>
-            <li>
+            <li className="w-auto">
               <SiXbox />
             </li>
-            <li>
+            <li className="w-auto">
               <SiWindows10 />
             </li>
-            <li className="md:text-8xl text-7xl">
+            <li className="md:text-8xl text-6xl w-auto">
               <SiMacos />
             </li>
-            <li>
+            <li className="w-auto flex items-center justify-center">
               <FaAppStoreIos />
             </li>
           </ul>

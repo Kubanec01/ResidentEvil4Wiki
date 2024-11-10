@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export function Characters() {
   // STYLES
   const textStyle =
-    "text-[#fffffff5] md:text-[3.2rem] md:leading-[3.2rem] text-3xl uppercase lg:w-[50%] w-[80%] text-center font-bold";
+    "text-[#fffffff5] md:text-[3.2rem] md:leading-[3.2rem] text-3xl uppercase lg:w-[50%] w-[80%] md:text-center text-left md:pl-0 pl-2 font-bold";
   const spanStyle = "text-[#f446b1]";
   const textContainerStyle =
     " w-full flex justify-center items-center mt-40 mx-auto max-w-[100rem]";
@@ -91,7 +91,7 @@ export function Characters() {
           </div>
           {/* TEXT 2 */}
           <div className=" w-full flex justify-center items-center mb-20 mx-auto max-w-[93.75rem]">
-            <div className="md:p-4 w-full flex justify-center items-center md:mt-0 mt-14 my-7 mx-auto flex-col">
+            <div className="md:p-4 w-full flex justify-center md:items-center md:mt-0 mt-14 my-7 mx-auto flex-col">
               <motion.h2
                 initial="hidden"
                 whileInView="visible"
