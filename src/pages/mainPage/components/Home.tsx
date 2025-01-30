@@ -25,7 +25,7 @@ export function Home() {
       {/* HOME CONTAINER */}
       <div className="h-full pb-36 pt-28 flex flex-col gap-20 bg-[#111112e4] overflow-hidden">
         {/* IMAGE 1 */}
-        <div className={`${imageContainer} mb-20 lg:mb-0`}>
+        <div className={`${imageContainer} mx-auto w-[90%] max-w-[1600px] mb-20 lg:mb-0`}>
           <div className={imageTextContainer}>
             <motion.h1
               initial="hidden"
@@ -84,7 +84,7 @@ export function Home() {
           </div>
         </div>
         {/* IMAGE 2 */}
-        <div className={imageContainer}>
+        <div className={`${imageContainer} mx-auto w-[90%] max-w-[1600px]`}>
           <div className="m-auto">
             <motion.img
               initial="hidden"
@@ -144,7 +144,7 @@ export function Home() {
           </div>
         </div>
         {/* IMAGE 3 */}
-        <div className={`${imageContainer} mb-24 lg:mb-0`}>
+        <div className={`${imageContainer} mx-auto w-[90%] max-w-[1600px] mb-24 lg:mb-0`}>
           <div className={imageTextContainer}>
             <motion.h1
               initial="hidden"

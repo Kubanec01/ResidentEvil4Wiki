@@ -63,7 +63,7 @@ export function Characters() {
           className=" w-full md:p-10 p-2"
           id="characters"
         >
-          <div className={`${style.charText} w-full`}>
+          <div className={`${style.charText} w-full max-w-[2000px] mx-auto `}>
             {/* TEXT */}
             <div className="w-full xl:w-[70%]">
               <motion.h2
