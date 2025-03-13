@@ -19,6 +19,7 @@ A simple project designed to showcase key information about the action-packed ga
 - TypeScript
 - Tailwind CSS
 - Framer Motion
+- Bootstrap
 
 
 ## 🔧 Installation
