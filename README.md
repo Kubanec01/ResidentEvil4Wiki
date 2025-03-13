@@ -1,50 +1,43 @@
-# React + TypeScript + Vite
+# Resident Evil 4 Wiki
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![screenshot](./src/assets/app-screenshot-img.png)
+---
+![screenshot](./src/assets/app-screenshot2-img.png)
+---
+![screenshot](./src/assets/app-screenshot3-img.png)
 
-Currently, two official plugins are available:
+A simple project designed to showcase key information about the action-packed game Resident Evil 4. This webpage is primarily focused on design, incorporating smooth animations and intuitive user interfaces. The application features dynamic content sections, including an interactive story overview that provides an in-depth look at the game's plot. Additionally, it offers a short, interactive quiz, allowing users to test their knowledge of the game in a fun and engaging way.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## 🕹️ Live Demo
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+[Check out the live demo here](https://kubanec01.github.io/ResidentEvil4Wiki/)
 
-- Configure the top-level `parserOptions` property like this:
+## 🛠 Technologies Used
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- React + Vite
+- TypeScript
+- Tailwind CSS
+- Framer Motion
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 🔧 Installation
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+To run the project locally, follow these steps:
+
+1. Clone the repository:
+
+   - `git clone https://github.com/Kubanec01/ResidentEvil4Wiki`
+
+2. Navigate to the project directory:
+
+   - `cd Resident-Evil-4-App`
+
+3. Install the dependencies:
+
+   - `npm install`
+
+4. Run the app locally:
+   - `npm run dev`
+
+Once the app is running, open your browser and go to `http://localhost:3000` to view the app in action.
